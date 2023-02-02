@@ -14,7 +14,6 @@ const game = {
         'senegal'
     ],
     cards: null,
-
     firstCard: false,
     secondCard: false,
     lockMode: false,
