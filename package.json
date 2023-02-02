@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github-romulomax47.github.io/jogo_da_memoria_React",
   "name": "jogo-da-memoria-react",
   "private": true,
   "version": "0.0.0",
@@ -6,7 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
