@@ -68,7 +68,7 @@ const game = {
         return this.cards;
     },
 
-    createPairFromSelecoes: function (time) {
+    createPairFromSelecoes(time) {
         return [
             {
                 timeId: this.createIdWhithTime(time),
@@ -84,11 +84,11 @@ const game = {
         ]
     },
 
-    createIdWhithTime: function (time) {
+    createIdWhithTime(time) {
         return time + parseInt(Math.random() * 1000);
     },
 
-    shuffleCars: function () {
+    shuffleCars() {
 
         let currentIndex = this.cards.length;
         let randomIndex = 0;
@@ -103,7 +103,7 @@ const game = {
 
     },
 
-    clearCard: function () {
+    clearCard() {
 
         this.firstCard = false;
         this.secondCard = false;
@@ -118,9 +118,7 @@ const game = {
 
         this.firstCard.flip = false;
         this.secondCard.flip = false;
-
-
-        game.clearCard()
+        this.clearCard()
 
     },
 
